@@ -12,7 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={manrope.className}>
 
-        <Example  />
+        {/* <Example  /> */}
         <main className="w-full px-[5vw]">
         <Header />
           {children}</main>

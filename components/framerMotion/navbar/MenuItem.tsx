@@ -28,10 +28,10 @@ export const MenuItem: React.FC<{ item: any }> = ({ item }) => {
   // const router = useRouter()
   const style = { border: `2px solid ${colors[item]}` };
   return (
-    <motion.li
-      variants={variants}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
+    <li
+      // variants={variants}
+      // whileHover={{ scale: 1.1 }}
+      // whileTap={{ scale: 0.95 }}
      
     > 
     <Link  href={`${item.link}`}>
@@ -41,6 +41,6 @@ export const MenuItem: React.FC<{ item: any }> = ({ item }) => {
       {/* <div className="icon-placeholder" style={style} /> */}
       <div className=" text-lg" style={style}>{item.label}</div>
       </Link>
-    </motion.li>
+    </li>
   );
 };
